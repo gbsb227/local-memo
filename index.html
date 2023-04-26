@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>memo-zang</h1>
+    </header>
+    <section class="wrapper">
+      <article class="memo">
+        <form class="memoForm">
+          <section class="memoWrapper">
+            <label for="memoTitle" class="memoTitle">제목</label>
+            <input type="text" id="memoTitle" />
+            <label for="memoContent" class="memoContent">내용</label>
+            <textarea id="memoContent"></textarea>
+          </section>
+        </form>
+        <button class="memoButton" id="memoButton">입력</button>
+      </article>
+      <section class="right">
+        <article class="info">
+          <h2 class="infoTitle">메모목록</h2>
+          <button class="up" type="button">최신순</button>
+          <button class="down" type="button">오래된순</button>
+        </article>
+        <article class="show">
+          <section class="contentWrapper">
+            <h3 class="contentTitle">title</h3>
+            <p class="date">2020. 1. 01. 오후 7:49:01</p>
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas
+              veniam numquam repudiandae sed, eum voluptate corporis maiores non
+              repellendus tenetur qui distinctio eligendi? Laudantium fugiat
+              aliquid eos pariatur vitae!
+            </p>
+            <button class="contentDelete">삭제</button>
+            <button class="contentModify">수정</button>
+          </section>
+        </article>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
